@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KWGGAME – Play & Win</title>
+
+  <!-- PWA 清单 -->
+  <link rel="manifest" href="/manifest.webmanifest">
+
+  <!-- 内联样式 -->
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      background: #151110;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .container { text-align: center }
+    .logo { font-size: 2.5rem; color: #ff5200; margin: 0 }
+    .tagline { margin: .5rem 0 2rem; font-size: 1.1rem; opacity: .8 }
+    .btn-download {
+      display: inline-block;
+      padding: .8rem 2rem;
+      border-radius: 8px;
+      background: #ff5200;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .btn-download:hover { opacity:.9 }
+    .hint { margin-top:1.5rem; font-size:.9rem; opacity:.7 }
+  </style>
+</head>
+<body>
+  <main id="app" class="container">
+    <h1 class="logo">KWGGAME</h1>
+    <p class="tagline">Play · Deposit · Win</p>
+    <a href="https://down.kwggame.top/kwg_1.1.6.5.apk" class="btn-download">
+      Download APK
+    </a>
+    <p class="hint">
+      Install KWGGAME to your home screen for a smoother, app‑like experience.
+    </p>
+  </main>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
